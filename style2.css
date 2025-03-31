@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chathura:wght@100;300;400;700;800&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Major+Mono+Display&family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Megrim&family=Smooch+Sans:wght@100..900&family=Tektur:wght@400..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic style for the webpage */
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background2.jpg') no-repeat center center/cover;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+
+/*-------------------Header-------------------*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex; /* arrange item in row or column in 1 dimension */
+    justify-content: space-between; /* arrange fb */
+    align-items: center;
+    z-index: 99; /*Layering to front>*/
+}
+
+.logo {
+    font-size: 2em; /* 2em = 32px */
+    font-family: "Cedarville Cursive", cursive;
+    color: white;
+    user-select: none; /* disable text selection */
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-family: 'megrim', cursive;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+/*-------------------Header-------------------*/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+  /* Style for the gallery section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates flexible columns */
+    gap: 10px; /* Adds spacing between images */
+    width: 90%; /* Adjust width */
+    margin: 0 auto; /* Centers the gallery */
+    padding-top: 20px;
+}
+
+.container{
+    max-width: 85%;
+    margin: 0px auto 20px; /* Adjust top margin to match header height */
+    padding-top: 20px; 
+}
+
+  /* Style for the navigation bar */
+.gallery .gallery-filter{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+   
+
+    
+}
+.gallery-filter .filter-item{
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'megrim', cursive;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    width: 400px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    
+}
+
+  /* Style for the active button */
+.gallery .gallery-filter .filter-item.active{
+    background-color: white;
+    color: #2a2932;
+    
+    
+}
+
+  /* Style for the images */
+.gallery .gallery-item{
+    padding: 0 15px;
+    width: 100%;
+    margin-bottom: 30px;
+    object-fit: cover;
+    
+}
+
+.gallery-item {
+    width: 100%;
+}
+
+.gallery-item .image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid */
+    gap: 10px; /* Reduced gap */
+    width: 100%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images fill their space */
+    border-radius: 5px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Keeps images looking good */
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text-section h1{
+    font-family: 'Major Mono Display', cursive;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.text-section p, .interntxt p, .seniortxt p, .mcpjtxt p, .extratxt p {
+    font-family: 'kanit', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    margin: 60px;
+    
+}
+
+.seniortxt, .mcpjtxt {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px; /* Add padding so the text doesn't touch the border */
+    margin: 20px 0; /* Add some spacing between sections */
+}
+
+.head {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    text-align: center;
+    width: 100%;  /* Ensures full width */
+    margin-top: 100px; /* Adjust the top margin if needed */
+}
+
+.head h1 {
+    font-family: 'Tektur', sans-serif;
+    font-weight: 10px;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+/*----------------- Lightbox styles------------------------ */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
