@@ -14,7 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background: url('background2.jpg') no-repeat center center/cover;
     overflow: hidden;
 }
@@ -185,3 +185,9 @@ span:nth-child(10){
 }
 
 
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        background-size: cover;
+    }
+}
