@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background: url('background2.jpg') no-repeat center center/cover;
     overflow-x: hidden;
 }
@@ -74,7 +74,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 60px;
+    
 }
 
 /* Icon styling */
@@ -147,4 +147,11 @@ header{
     font-family: 'tektur', sans-serif;
     font-size: 20px;
     font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        background-size: cover;
+    }
 }
