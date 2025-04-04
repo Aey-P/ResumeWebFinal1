@@ -74,7 +74,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+    margin-top: 50px;
 }
 
 /* Icon styling */
@@ -102,6 +102,12 @@ header{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: 15px;
+}
+
+.github i {
+    font-size: 40px; /* Adjust the size */
+    color: black;
     margin: 15px;
 }
 
@@ -144,6 +150,12 @@ header{
 }
 
 .ig a {
+    font-family: 'tektur', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.github a {
     font-family: 'tektur', sans-serif;
     font-size: 20px;
     font-weight: 400;
