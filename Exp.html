@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Experiences</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head> 
 
 
@@ -119,21 +120,25 @@
     
     <div class="text-container">
         <div class = 'text-section seniortxt'>
-            <h1>Senior Project (In progress)</h1>
-            <p>Liquid level and volume measurement systems using radiation transmission technique</p>
-            <p>>> Develop the systems which contain 4 modes
+            <h1 data-aos="fade-up">Senior Project (In progress)</h1>
+            <p data-aos="fade-up">Liquid level and volume measurement systems using radiation transmission technique</p>
+            <p data-aos="fade-up">>> Develop the systems which contain 4 modes
                 High volt check Mode: To check the high voltage supplied to the NaI detector
                 Calibration mode: To calibrate and get the graph for each containment to calculate the level and volume later in mode C
                 Measurement mode: To measure the liquid level and volume 
                 Counting Mode: To count the radiation within a specified time period</p>
-            <p>Tune in for more details coming soon!</p>
+
+            <p data-aos="fade-up">Connect to our system and click the link below to access the web interface.</p>
+            <div class="seniorlink">
+                <a href="https://limearadinterface.netlify.app/" class="systemlink" data-aos="fade-up">>> Web control interface</a>
+            </div>
             
         </div>
 
         <div class = 'text-section interntxt'>
-            <h1>Internship</h1>
-            <p>Varian Medical Systems Pacific, Inc.</p>
-            <p> >> Through my internship at Varian Medical Systems, 
+            <h1 data-aos="fade-up">Internship</h1>
+            <p data-aos="fade-up">Varian Medical Systems Pacific, Inc.</p>
+            <p data-aos="fade-up"> >> Through my internship at Varian Medical Systems, 
                 I gained valuable experience. I assisted field support engineers with PM radiotherapy 
                 (Varian Truebeam, Halcyon, VitalBeam) and radiodiagnosis (Varian IX and OBI+IX) machines. 
                 My job was to inspect and maintain the couch, X-ray housing, change coolant water, moderator cabinet, 
@@ -142,8 +147,8 @@
         </div>
 
         <div class="text-section mcpjtxt">
-            <h1>Microcontroller Project</h1>
-            <p>>> This project utilizes a radiation transmission technique to calibrate and measure liquid levels in soft drink cans, 
+            <h1 data-aos="fade-up">Microcontroller Project</h1>
+            <p data-aos="fade-up">>> This project utilizes a radiation transmission technique to calibrate and measure liquid levels in soft drink cans, 
                 simulating the quality control(QC) process in the soft drink industry. Unlike my senior project, 
                 this project uses a general-purpose scaler, LUDLUM M2000 to apply high voltage to a NaI 1x1 detector, 
                 functioning as a ratemeter and for single channel analysis. Additionally, this project uses Am-241 as a radioactive source, 
@@ -152,23 +157,28 @@
         
 
         <div class="text-section extratxt">
-            <h1>Extracurricular activity</h1>
-            <p># Student president of Nuclear Engineering major</p>
-            <p># Administration and organizing in Vishnu camp(welcoming camp),</p>
-            <p># Lecturer and Organizing for nuclear measurement workshop in Langear camp,</p>
-            <p># Organizing CU open house for department of nuclear engineer,</p>
-            <p># Participate in extracurricular in electronic and microcontroller laboratory</p>
+            <h1 data-aos="fade-up">Extracurricular activity</h1>
+            <p data-aos="fade-up"># Student president of Nuclear Engineering major</p>
+            <p data-aos="fade-up"># Administration and organizing in Vishnu camp(welcoming camp),</p>
+            <p data-aos="fade-up"># Lecturer and Organizing for nuclear measurement workshop in Langear camp,</p>
+            <p data-aos="fade-up"># Organizing CU open house for department of nuclear engineer,</p>
+            <p data-aos="fade-up"># Participate in extracurricular in electronic and microcontroller laboratory</p>
             
         </div>
 
         <div class="text-section resumetxt">
-            <a href="https://drive.google.com/file/d/1-5sj4_K_j-mU-drqTh4Ji2phYVbM7Zd7/view?usp=sharing" class="link">Download my resume here ;)</a>
+            <a href="https://drive.google.com/file/d/1-5sj4_K_j-mU-drqTh4Ji2phYVbM7Zd7/view?usp=sharing" class="link" data-aos="fade-up">Download my resume here ;)</a>
         </div>
     </div>
 
 
 
 <script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS animations
+    </script>
 
 </body>
 
